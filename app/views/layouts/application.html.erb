@@ -3,14 +3,16 @@
   <head>
     <title>DesafioRorUnidad5M21</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   </head>
-
-  <body>
+  <body class="is-preload-0 is-preload-1 is-preload-2">
     <%= yield %>
+    <script src="assets/jquery.min.js"></script>
+    <script src="assets/browser.min.js"></script>
+    <script src="assets/breakpoints.min.js"></script>
+    <script src="assets/main.js"></script>
   </body>
 </html>
