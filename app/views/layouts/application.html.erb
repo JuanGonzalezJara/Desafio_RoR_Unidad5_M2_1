@@ -1,15 +1,52 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DesafioRorUnidad5M21</title>
+    <title>Desafio_RoR_Unidad5_M2_1</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+    <link rel="stylesheet" href="assets/main.css" />
+    <noscript><link rel="stylesheet" href="assets/noscript.css" /></noscript>
+    <script src="https://kit.fontawesome.com/c932621ca2.js" crossorigin="anonymous"></script>
   </head>
   <body class="is-preload-0 is-preload-1 is-preload-2">
-    <%= yield %>
+    <div id="main">
+      <header id="header">
+        <h1>Lens</h1>
+        <p>Just another fine responsive site template by <a href="http://html5up.net">HTML5 UP</a></p>
+        <ul class="icons">
+          <li>
+            <%= link_to "#", class: "icon brands fa-twitter" do %>
+              <span class="label">Twitter</span>
+            <% end %>
+          </li>
+          <li>
+            <%= link_to "#", class: "icon brands fa-instagram" do %>
+              <span class="label">Instagram</span>
+            <% end %>
+          </li>
+          <li>
+            <%= link_to "#", class: "icon brands fa-github" do %>
+              <span class="label">Github</span>
+            <% end %>
+          </li>
+          <li>
+            <%= link_to "#", class: "icon fa-envelope" do %>
+              <span class="label">Email</span>
+            <% end %>
+          </li>
+        </ul>
+      </header>
+      <%= yield %>
+      <footer id="footer">
+        <ul class="copyright">
+          <li>&copy; Untitled.</li>
+          <li>Design: <a href="http://html5up.net">HTML5 UP</a>.</li>
+        </ul>
+      </footer>
+    </div>
     <script src="assets/jquery.min.js"></script>
     <script src="assets/browser.min.js"></script>
     <script src="assets/breakpoints.min.js"></script>
