@@ -1,24 +1,17 @@
-# README
+Desafio Unidad 5 Modulo 2 (1)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Acelerar la construcción de un proyecto!
 
-Things you may want to cover:
+Desafio orientado a validar conocimientos orientados a la integracion de plantillas en Ruby on Rails
 
-* Ruby version
+## Requerimientos
 
-* System dependencies
+1. Descargar e integrar en Rails la plantilla HTML de la aplicación. Esta planilla deberá estar en una ruta index que además será la ruta raíz.
+2. Los assets CSS y JS se deben incorporar en sus respectivos directorios.
+3. La integración de los archivos CSS y JS se realizarán desde el application.html.erb.
+4. Implementar un controlador que retorne una vista que muestre información acerca de en qué consiste la galería.
+5. La información acerca de la galeríad eberá estar como un el emento de tipo ancla que permita redirigir a los usuarios a dicha vista.
 
-* Configuration
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![Logo!](https://raw.githubusercontent.com/JuanGonzalezJara/Desafio_RoR_Unidad4_M3_3/main/assets/ROR_Logo.png)
